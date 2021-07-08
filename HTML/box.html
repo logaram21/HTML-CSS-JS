@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadows</title>
+    <style>
+        .conatiner,.container2,.container3{
+            display: flex;
+        }
+        .box{
+            background-color: tomato;
+           box-shadow: 10px 10px teal;
+            padding: 16px;
+            margin: 10px;
+            color: white;
+        }
+        .box1{
+            background-color: blueviolet;
+           box-shadow: 10px 10px 20px  rgb(57, 212, 212);
+            padding: 16px;
+            margin: 10px;
+            color: white;
+            
+        }
+        .box2{
+            background-color: gold;
+           box-shadow: inset 10px 10px 20px  rgb(212, 88, 57);
+            padding: 16px;
+            margin: 10px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box-Shadow without blur</h1>
+    <div class="conatiner">
+        <div class="box">
+            <h1>Box-1</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, autem!</p>
+        </div>
+       
+        <div class="box">
+            <h1>Box-2</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, fugiat.</p>
+        </div>
+       
+        <div class="box">
+            <h1>Box-3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, mollitia.</p>
+        </div>
+       
+    </div>
+    <br><br><br>
+    <h1>Box-shadow with blur</h1>
+    <div class="container2">
+        <div class="box1">
+            <h1>Box-1</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, autem!</p>
+        </div>
+       
+        <div class="box1">
+            <h1>Box-2</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, fugiat.</p>
+        </div>
+       
+        <div class="box1">
+            <h1>Box-3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, mollitia.</p>
+        </div>
+    </div>
+    <h1>Box-shadow inside</h1>
+    <div class="container3">
+        <div class="box2">
+            <h1>Box-1</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, autem!</p>
+        </div>
+       
+        <div class="box2">
+            <h1>Box-2</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, fugiat.</p>
+        </div>
+       
+        <div class="box2">
+            <h1>Box-3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, mollitia.</p>
+        </div>
+        </div>
+</body>
+</html>

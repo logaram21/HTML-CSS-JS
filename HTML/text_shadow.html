@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Shadow</title>
+    <style>
+        .container{
+            background-color: blanchedalmond;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+        justify-content: center;
+        align-items: center  ;
+        
+        }
+        h1{
+            font-family: sans-serif;
+        }
+        h1.a{
+            text-shadow: 2px 2px steelblue;
+        }
+        h1.b{
+            text-shadow: 2px 2px 5px steelblue;
+        }
+        h1.c{
+            color: blanchedalmond;
+            text-shadow: 2px 2px 5px steelblue;
+        }
+        h1.d{
+            text-shadow: -2px -2px steelblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text-Shadow</h1>
+    <div class="container">
+        <h1 class="a">Welcome to my site.</h1>
+        <h1 class="b">Welcome to my site.</h1>
+        <h1 class="c">Welcome to my site.</h1>
+        <h1 class="d">Welcome to my site.</h1>
+    </div>
+</body>
+</html>

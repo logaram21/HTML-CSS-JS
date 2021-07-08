@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Variables</title>
+    <style>
+        :root{
+            --primary-color:steelblue;
+            --secondary-color:teal;
+      --third-color:gray;
+--text-primary:white;
+        }
+      
+        body{
+font-family: sans-serif;
+        }
+        .container{
+            background-color: var(--third-color);
+        }
+        h2{
+            display: inline;
+            background-color: var( --primary-color);
+        
+        }
+        p{
+            background-color: var( --secondary-color);
+       color:var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS-Variables</h1>
+    <h4>Once declared in root it can be accessed wherever you need.</h4>
+    <div class="container">
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugiat adipisci impedit harum officiis laudantium placeat magni veritatis architecto id quae facere vitae deserunt eveniet error, officia debitis! Quasi, quaerat!</p>
+
+    </div>
+    <div class="container">
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur a unde necessitatibus, incidunt quo tempore voluptate eligendi nesciunt? Vero rerum alias delectus in sapiente? Placeat, recusandae delectus! Voluptate, laudantium doloribus!</p>
+    </div>
+</body>
+</html>
