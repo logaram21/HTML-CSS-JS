@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .con{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #choose{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con" id="con">
+        <label for="">Choose your lucky colour</label>
+    <select name="" id="choose" onchange="changeclr(this)">
+        <option value=""></option>
+        <option value="Green" id="green">Green</option>
+        <option value="Red" id="red">Red</option>
+        <option value="Yellow" id="yellow">Yellow</option>
+        <option value="Grey" id="grey">Grey</option>
+        <option value="Pink" >Pink</option>
+    </select>
+    </div>
+    <script>
+        function changeclr(getcolor){
+            var bg=document.getElementById("con");
+var c=getcolor.value;
+bg.style.backgroundColor=c;
+bg.style.transition="0.5s all";
+        }
+    </script>
+</body>
+</html>
