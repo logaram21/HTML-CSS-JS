@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heading-tag</title>
+</head>
+<style>
+    *{
+        padding:0px;
+        margin: 0px;
+    }
+    .container{
+        display:flex;
+        height: 100vh;
+        background-color: darkslategrey;
+        justify-content: center;
+        align-items: center;
+        animation: bg;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes bg {
+        25%{
+            background-color: yellowgreen;
+        }
+        50%{
+            background-color: blueviolet;
+        }
+        75%{
+            background-color: coral;
+        }
+        100%{
+            background-color: darkslategrey;
+        }
+        
+    }
+    .div{
+        width: 20%;
+        padding: 20px;
+        line-height: 25px;
+        background-color: white;
+        animation: name;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes name {
+  50%{
+      margin-top: 100px;
+  }
+        100%{
+           margin-top: -100px;
+        }
+    }
+    h1{
+        color: red;
+        text-align: center;
+        padding: 10px;
+    }
+    .div:hover{
+        box-shadow: inset 3px 3px 5px rgb(14, 13, 13),inset -3px -3px 5px black;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="div">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum corporis rem modi repudiandae? Ipsum soluta debitis molestiae voluptatum, unde eius?</p>
+
+
+        </div>
+    </div>
+</body>
+</html>
