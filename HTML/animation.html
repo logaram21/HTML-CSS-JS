@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    line-height: 50px;
+}
+#head{
+    animation: head;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes head {
+    from{
+        transform: translateY(-1200px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+    
+}
+#page{
+    transform: translateX(-2000px);
+    animation: page;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  
+}
+@keyframes page {
+   
+       
+        
+    
+    to{
+        transform: translateX(0px);
+    }
+}
+.btn{
+    padding: 10px 30px;
+    border: none;
+    transition: 1s all;
+   
+}
+.btn:hover{
+    background-color: green;
+    color: white;
+}
+#page1{
+    background-color: rgba(210, 180, 140, 0.664);
+}
+#page2{
+    background-color: rgba(0, 128, 128, 0.651);
+
+}
+#page3{
+    background-color: thistle;
+}
+    </style>
+</head>
+<body>
+    <div class="container" id="page1">
+        <h1 id="head">Welcome to my website</h1>
+        <p id="page">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis ducimus corporis praesentium! Unde, vel? Porro ad, tempore eaque esse laboriosam suscipit excepturi alias tempora quod hic doloremque quidem minima.</p>
+        <input type="button" value="Next Page" class="btn">
+    </div>
+    <div class="container" id="page2">
+        <h1>Welcome to my website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis ducimus corporis praesentium! Unde, vel? Porro ad, tempore eaque esse laboriosam suscipit excepturi alias tempora quod hic doloremque quidem minima.</p>
+        <input type="button" value="Next Page" class="btn">
+       
+    </div>
+    <div class="container" id="page3">
+        <h1>Welcome to my website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis ducimus corporis praesentium! Unde, vel? Porro ad, tempore eaque esse laboriosam suscipit excepturi alias tempora quod hic doloremque quidem minima.</p>
+        <input type="button" value="Next Page" class="btn">
+    </div>
+</body>
+</html>
