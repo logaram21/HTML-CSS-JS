@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        .con{
+            background-color: rgb(60, 60, 180);
+            display: flex;
+            flex-direction: column;
+            height: 150vh;
+            align-items: center;
+            justify-content: flex-start;
+ 
+        }
+        .head{
+text-align: center;
+padding: 20px;
+line-height: 35px;
+color: white;
+
+        }
+        .time{
+            display: flex;
+ 
+       align-self:center;
+ 
+      
+        }
+      
+        li{
+       background-color: rgba(128, 128, 128, 0.63);
+        padding: 10px;
+        margin: 10px;
+        width: 300px;
+        list-style: none;
+        }
+        ul{
+            background:linear-gradient(45deg,rgba(202, 67, 67, 0.788),rgba(198, 231, 12, 0.74));
+            border-radius: 10px;
+        animation: name 5s;
+        transform: scale(0);
+        animation-fill-mode: forwards;
+
+        }
+        @keyframes name {
+            to{
+                transform: scale(1);
+            }
+            
+        }
+
+        li:nth-child(odd){
+           border-right: 5px solid rgb(255, 255, 255);
+           padding: 5px;
+           
+        }
+        li:nth-child(even){
+           
+            border-left: 5px solid rgb(255, 255, 255);
+           padding: 5px;
+           animation: no 5s;
+           animation-fill-mode: forwards;
+           transform: translateX(-150px);
+           animation-delay: 2s;
+        }
+     @keyframes no {
+         to{
+             transform: translateX(0);
+         }
+         
+     }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="head">
+<h1>Timeline-Chart</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, sint fuga. Repudiandae asperiores quam libero harum quo! Necessitatibus reprehenderit quidem quos, odit repellat vitae amet eveniet labore quas dicta modi!</p>
+        <hr>
+        </div>
+        <div class="time">
+            <div class="line"></div>
+            <ul>
+            <li>
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, sequi facilis ullam eum adipisci unde?</p>
+            </li>
+            <li>
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, sequi facilis ullam eum adipisci unde?</p>
+            </li>
+            <li>
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, sequi facilis ullam eum adipisci unde?</p>
+            </li>
+            <li>
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, sequi facilis ullam eum adipisci unde?</p>
+            </li>
+            <li>
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, sequi facilis ullam eum adipisci unde?</p>
+            </li>
+            <li>
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, sequi facilis ullam eum adipisci unde?</p>
+            </li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
