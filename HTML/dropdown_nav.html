@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4d51d68f8f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+
+    <title>Dropdown-Nav</title>
+    <style>
+    *{
+        padding:0;
+        margin:0;
+    }
+    body{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: bold;
+    }
+    .container{
+        height: 100vh;
+        background-color: peachpuff;
+    }
+    .navbar{
+        
+        width: 100vw;
+        height: 50px;
+        
+    
+    }
+    .nav-item{
+        padding: 5px;
+    }
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+.lin{
+    margin: 20px;
+    list-style: none;
+cursor: pointer;
+
+
+    
+}
+
+.item{
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+transition: 1s;
+  display: none;
+    cursor: pointer;
+    color: papayawhip;
+    z-index: 111;
+  
+   
+}
+.lin:hover{
+    color: orangered;
+}
+.lin:hover .item{
+  
+    display: block;
+
+
+  
+}
+.item:hover{
+    background-color: orangered;
+}
+.row{
+    height: 300px;
+    background-color: rgba(255, 68, 0, 0.596);
+}
+.no .item{
+    margin-top: 3px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="nav-item">
+                <ul class="list">
+                    <li class="lin">Home</li>
+                    <li class="lin">About</li>
+                    <li class="lin no">Course
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="no">
+                            <li class="item">HTML</li>
+                            <li class="item">CSS</li>
+                            <li class="item">Bootstrap</li>
+                            <li class="item">Javascript</li>
+                        </ul>
+                    </li>
+                    <li class="lin">Duration
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="no">
+                            <li class="item">Part-Time</li>
+                            <li class="item">Full-TIme</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+    </div>
+</body>
+</html>
