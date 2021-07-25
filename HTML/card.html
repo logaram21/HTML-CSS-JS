@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+            background-color: blanchedalmond;
+        }
+        .box{
+            height: 300px;
+width: 300px;
+background-color: rgba(128, 128, 128, 0.452);
+     
+}
+img{
+    height: 200px;
+    width: 200px;
+  
+    transition: 0.5s all;
+}
+.img{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ transition: 0.5s all;
+    
+}
+.box:hover .img{
+    transform: rotate(45deg);
+    margin-top: -100px;
+}
+
+.box:hover h2{
+    visibility: visible;
+    opacity: 1;
+
+}
+h2{
+    text-align: center;
+    visibility: hidden;
+    opacity:0 ;
+    transition: 0.5s all;
+}
+p{
+    text-align: center;
+    visibility: hidden;
+    opacity:0 ;
+    transition: 0.5s all;
+}
+.box:hover p{
+    visibility: visible;
+    opacity: 1;
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="img">
+                <img src="https://pngimg.com/uploads/running_shoes/running_shoes_PNG5816.png" alt="">
+           
+            </div>
+            <h2>Nike Shoes</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quisquam omnis consequuntur quaerat aut reiciendis ipsa magnam tempore quod, animi similique nesciunt inventore itaque porro, sequi quibusdam libero pariatur odit!</p>
+        </div>
+    </div>
+</body>
+</html>
